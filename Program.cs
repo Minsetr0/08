@@ -1,4 +1,5 @@
 ﻿const string password = "12345";
+
 int tryCount = 3;
 
 for (int i = 0; i < tryCount; i++)
@@ -12,6 +13,7 @@ for (int i = 0; i < tryCount; i++)
     }
     else
     {
-        Console.WriteLine("Неверно. У вас осталось " + (tryCount - i - 1) + " попыток.");
+        int count = tryCount - i - 1;
+        Console.WriteLine("Неверно. У вас осталось " + (count) + " попыток.");
     }
 }
